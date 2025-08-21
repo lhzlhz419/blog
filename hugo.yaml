@@ -267,3 +267,6 @@ frontmatter:
     # lastmod: ['lastmod', ':git', 'date', 'publishDate'] 
     lastmod: [":fileModTime", "lastmod"]
 
+caches:
+    images:
+        dir: :cacheDir/images
