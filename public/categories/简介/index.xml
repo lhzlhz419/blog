@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>简介 on ColinLu的小站</title>
+        <link>http://localhost:1313/categories/%E7%AE%80%E4%BB%8B/</link>
+        <description>Recent content in 简介 on ColinLu的小站</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>ColinLu</copyright><atom:link href="http://localhost:1313/categories/%E7%AE%80%E4%BB%8B/index.xml" rel="self" type="application/rss+xml" />
+    </channel>
+</rss>
