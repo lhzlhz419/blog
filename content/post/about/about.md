@@ -1,13 +1,14 @@
 ---
 title: 关于本站
 date: 2025-08-21T20:04:00+08:00
-draft: true
+draft: false
 slug: about
 image: 
 categories: 
     - about
 toc: true
 math: true
+weight: 1
 ---
 
 

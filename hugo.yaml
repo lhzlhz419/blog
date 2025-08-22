@@ -1,4 +1,4 @@
-baseurl: https://example.com/
+baseurl: https://lhzlhz419.github.io/
 languageCode: zh-cn
 theme: hugo-theme-stack
 title: ColinLu的小站
@@ -174,13 +174,13 @@ params:
         page:
             - type: toc
 
-    opengraph:
-        twitter:
-            # Your Twitter username
-            site:
+    # opengraph:
+    #     twitter:
+    #         # Your Twitter username
+    #         site:
 
-            # Available values: summary, summary_large_image
-            card: summary_large_image
+    #         # Available values: summary, summary_large_image
+    #         card: summary_large_image
 
     defaultImage:
         opengraph:
@@ -216,7 +216,7 @@ menu:
 
         - identifier: bilibili
           name: Bilibili
-          url: https://www.bilibili.com
+          url: https://space.bilibili.com/3493262123862385
           params:
               icon: brand-bilibili
 
