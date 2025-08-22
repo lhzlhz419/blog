@@ -26,6 +26,9 @@
     {{ $showReadingTime := .Params.readingTime | default (.Site.Params.article.readingTime) }}
     {{ $showDate := not .Date.IsZero }}
     {{ $showFooter := or $showDate $showReadingTime }}
+    {{- $pubdate := .PublishDate.Format "2006-01-02" }}
+    {{- $lastmod := .Lastmod.Format "2006-01-02" | default $pubdate -}}
+
     {{ if $showFooter }}
     <footer class="article-time">
         {{ if $showDate }}
@@ -34,6 +37,11 @@
                 <time class="article-time--published">
                     {{- .Date | time.Format (or .Site.Params.dateFormat.published "Jan 02, 2006") -}}
                 </time>
+                {{- if ne $lastmod $pubdate -}}
+                <time class="article-time--lastmod">
+                    {{ T "article.lastUpdatedOn" }} {{ .Lastmod | time.Format ( or .Site.Params.dateFormat.lastUpdated "Jan 02, 2006 15:04 MST" ) }}
+                </time>
+                {{ end }}
             </div>
         {{ end }}
 
@@ -41,19 +49,20 @@
             <div>
                 {{ partial "helper/icon" "clock" }}
                 <time class="article-time--reading">
-                    {{ T "article.readingTime" .ReadingTime }}
+                    共 {{ .WordCount }} 字，{{ T "article.readingTime" .ReadingTime }}
                 </time>
             </div>
         {{ end }}
 
-        {{- if ne .Lastmod .Date -}}
-        <section class="article-lastmod">
-            {{ partial "helper/icon" "clock" }}
-            <time class="article-time--lastmod">
-                {{ T "article.lastUpdatedOn" }} {{ .Lastmod | time.Format ( or .Site.Params.dateFormat.lastUpdated "Jan 02, 2006 15:04 MST" ) }}
+        <!-- busuanzi -->
+        {{ if .Site.Params.busuanzi.enable -}}
+        <section class="article-analysic">&nbsp
+            {{ partial "helper/icon" "eye" }}
+            <time class="article-words">
+                <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span> &nbsp阅读</span>
             </time>
         </section>
-        {{- end -}}
+        {{- end }}
     </footer>
     {{ end }}
 

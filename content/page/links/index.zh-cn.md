@@ -1,5 +1,7 @@
 ---
 title: 友链
+layout: "links"
+slug: "links"
 links:
   - title: LRYP's Blog
     description: 生きている不思議 死んでゆく不思議

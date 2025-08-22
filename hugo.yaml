@@ -57,7 +57,7 @@ params:
 
     dateFormat:
         published: 2006-01-02
-        lastUpdated: 2006-01-02 15:04 MST
+        lastUpdated: 2006-01-02
 
     sidebar:
         emoji: 
@@ -200,6 +200,9 @@ params:
             enabled: true
         content:
             enabled: true
+
+    busuanzi:
+        enable: true
 
 ### Custom menu
 ### See https://stack.jimmycai.com/config/menu
