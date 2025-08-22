@@ -7,4 +7,4 @@ menu:
             icon: user
 ---
 
-This is a test page for i18n support.
+我是Colin Lu，清华大学物理系2023级本科生。

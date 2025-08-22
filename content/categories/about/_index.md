@@ -1,9 +1,10 @@
 ---
 title: "简介"
-description: ""
+description: "这里是本站的简介"
 slug: "about"
-image: "hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg"
+image: 
 style:
     background: "#2a9d8f"
     color: "#fff"
+weight: 5
 ---
