@@ -201,7 +201,7 @@ params:
         content:
             enabled: true
 
-    busuanzi:
+    vercount:
         enable: true
 
 ### Custom menu
