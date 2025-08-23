@@ -264,11 +264,11 @@ markup:
         lineNumbersInTable: true
         tabWidth: 4
 
-# enableGitInfo: true
+enableGitInfo: true
 
 frontmatter:
-    # lastmod: ['lastmod', ':git', 'date', 'publishDate'] 
-    lastmod: [":fileModTime", "lastmod"]
+    lastmod: ['lastmod', ':git', 'date', 'publishDate'] 
+    # lastmod: [":fileModTime", "lastmod"]
 
 caches:
     images:
